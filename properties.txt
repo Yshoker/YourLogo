@@ -1,0 +1,381 @@
+﻿# Unicode for space \u0020\
+
+
+# ----- General Properties --------- 
+#-------------------------------------------
+LoginUrl = http://automationpractice.com/
+
+# ----- Sign In Page Locators  --------- 
+#-------------------------------------------
+SignInBut = //a[contains(text(),'Sign in')]
+EmailSignIn = //input[@id = 'email_create']
+EmailSignInBut = //button[@id = 'SubmitCreate']
+
+# ----- Create Account Page Locators  --------- 
+#-------------------------------------------
+Title= //*[@id="account-creation_form"]/div[1]/div[1]/div[1]/label
+FirstName = //input[@id='customer_firstname']
+LastName = //input[@id='customer_lastname']
+Email = //input[@id='email']
+Password = //input[@id='passwd']
+DateofBirthDay = //select[@id='days']
+DateofBirthMonth = //select[@id='months']
+DateofBirthYear = //select[@id='years']
+Company= //input[@id='company']
+Address = //input[@id='address1']
+Zip_PostalCode = //input[@id='postcode'] 
+City = //input[@id='city']
+State = //select[@id='id_state']
+Country = //select[@id='id_country']
+MobilePhone = //input[@id='phone_mobile']
+submitBtn =  //button[@id ='submitAccount']
+MyAccountHeader = //h1[contains(text(),'My account')]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# ----- Customer Page Locators --------- 
+#-------------------------------------------
+CustomerPageCustomerNameInput = #CustomerIDAutoComplete
+CustomerPageSearchButton = #MyCustomersFilterSubmit
+CustomerPageTableHead = #CustomersGrid > table > tbody > tr
+CustomerPageTablePageNumbers = #CustomersGrid > div.k-pager-wrap.k-grid-pager.k-widget.k-floatwrap > ul
+CustomerPageAutoComplete = #CustomerIDAutoComplete_listbox
+CustomerPageAutoCompleteEmpty = //*[@id=\"CustomerIDAutoComplete_listbox\"]
+CustomerPageNewCustomerButton = #CustomersGrid > div.k-header.k-grid-toolbar.k-grid-top > a
+
+CustomerPageNewCustName = #customerDetails_Name
+CustomerPageNewCustEnglishName = #customerDetails_CustNameENG
+CustomerPageNewCustAreaCodePhone = #customerDetails_AreaCode
+CustomerPageNewCustPhone = #customerDetails_PhoneNum
+CustomerPageNewCustPropertiesButton = //*[@id=\"tabstripCD\"]/ul/li[2]/span[2]
+CustomerPageNewCustD&B = #customerDetails_DunsNo
+CustomerPageNewCustSaveButton = //*[@id="frmCustomerDetails"]/div[2]/div/a[1]
+CustomerPageNewCustAdress = #customerDetails_Address
+CustomerPageNewCustPartnerName = #customerDetails_PartnerIDAutoComplete
+CustomerPageNewCustManagerName = #customerDetails_GenManagerIDAutoComplete
+
+CustomerPageNewCustListElement1 = #tabstripCD-2 > table > tbody > tr:nth-child(1) > td:nth-child(1) > table > tbody > tr:nth-child(1) > td.Value > span.k-widget.k-dropdown > span > span.k-input
+CustomerPageNewCustListElement2 = #tabstripCD-2 > table > tbody > tr:nth-child(1) > td:nth-child(1) > table > tbody > tr:nth-child(3) > td.Value > span.k-widget.k-dropdown > span > span.k-input
+CustomerPageNewCustListElement3 = #tabstripCD-2 > table > tbody > tr:nth-child(1) > td:nth-child(1) > table > tbody > tr:nth-child(5) > td.Value > span.k-widget.k-dropdown > span > span.k-input
+CustomerPageNewCustListElement4 = #tabstripCD-2 > table > tbody > tr:nth-child(1) > td:nth-child(1) > table > tbody > tr:nth-child(7) > td.Value > span.k-widget.k-dropdown > span > span.k-input
+CustomerPageNewCustListElement5 = #tabstripCD-2 > table > tbody > tr:nth-child(1) > td:nth-child(2) > table > tbody > tr:nth-child(1) > td.Value > span > span > span.k-input
+
+
+
+# ----- Contact Page Locators --------- 
+#-------------------------------------------
+ContactPageCustomerName = #ContactsDetailsFilterSearchAutoComplete
+ContactPageCustomerAutoComplete = #ContactsDetailsFilterSearchAutoComplete_listbox
+ContactPageCustomerAutoCompleteEmpty = 
+ContactPageSearchButton = #MyContactsFilterSubmit
+ContactPageTableHead = #ContactsGrid > table > tbody
+ContactPageNewContactButton = #ContactsGrid > div.k-header.k-grid-toolbar.k-grid-top > a.k-button.k-button-icontext.k-grid-CreateContact
+ContactPageTablePageNumbers = #ContactsGrid > div.k-pager-wrap.k-grid-pager.k-widget.k-floatwrap > ul
+
+ContactPageRemoveFromMailingListButton = #ContactsGrid > div.k-header.k-grid-toolbar.k-grid-top > a.k-button.k-button-icontext.k-grid-RemovededFromList 
+ContactPageRemoveFromMailingListDropDown = #wndDistributionContent > table > tbody > tr > td > table > tbody > tr:nth-child(1) > td.Value > span > span.k-dropdown-wrap.k-state-default > span.k-input
+ContactPageRemoveFromMailingListSaveButton = #frmDistributionDetails > div.window-footer > div > a.k-button.k-button-icontext.k-primary.k-grid-AddToDistributionList.floated
+ContactPageRemoveFromMailingListCancel = #frmDistributionDetails > div.window-footer > div > a.k-button.k-button-icontext.k-grid-cancelAddDistribution
+
+ContactPageAddToMailingListButton = #ContactsGrid > div.k-header.k-grid-toolbar.k-grid-top > a.k-button.k-button-icontext.k-grid-SelectedToList
+ContactPageAddToMailingListSaveButton = #frmDistributionDetails > div.window-footer > div > a.k-button.k-button-icontext.k-primary.k-grid-AddToDistributionList.floated
+ContactPageAddToMailingListDropDownKindButton = #DistributionTypeList-list > span > input
+ContactPageAddToMailingListDropDownChooseListButton = #DistributionList-list > span > input
+ContactPageAddToMailingListNewDropDownListButton = #NewDistbtn
+ContactPageAddToMailingListNewNameButton = #NewDist
+ContactPageAddToMailingListCancelButton = #frmDistributionDetails > div.window-footer > div > a.k-button.k-button-icontext.k-grid-cancelAddDistribution
+
+newContactCustName = #ContactsCustomerID
+newContactDegree = #tabstripConD-1 > table > tbody > tr > td:nth-child(1) > table > tbody > tr:nth-child(4) > td.Value > span.k-widget.k-dropdown > span
+newContactPrivateName = #FirstName
+newContactLastName = #LastName
+newContactEmail = #Email
+newContactAreaCodePhone = #AreaCode
+newContactPhone = #PhoneNum
+newContactJob = #tabstripConD-1 > table > tbody > tr > td:nth-child(1) > table > tbody > tr:nth-child(15) > td.Value > span.k-widget.k-dropdown > span > span.k-input
+newContactAdress = #Address
+newContactSaveButton = #frmContactDetails > div.window-footer > div > a.k-button.k-button-icontext.k-grid-DeleteContact.floated
+newContactMailingListButton = #tabstripConD > ul > li:nth-child(2)
+newContactMenuHeadList = #tabstripConD > ul
+newContactMailingHeadList = #tabstripConD-2 > div > div.distSelectedBox > div > div > div.k-list-scroller.k-selectable > ul
+
+						
+# ----- Projects Page Locators  --------- 
+#-------------------------------------------
+subProjectsTab = #RequestSubProjectsGridbtn
+newProjectsTab = #PreProjectGridbtn
+ProjectsInProcessTab = #ProjectsInApprovalProcessGridbtn
+activateProjectsTab = #ProjectsGridbtn
+inputCustomerName = #ProjectsDetailsFilterSearchAutoComplete
+customerNameAutoResult = #ProjectsDetailsFilterSearchAutoComplete-list
+customerNameAutoResultEmpty = //*[@id="ProjectsDetailsFilterSearchAutoComplete-list"]/div[3]/div
+searchButton = #MyProjectsFilterSubmit   
+FilterProjectFormHead = body > div.k-animation-container > form
+ProjectsLoaderImg = #loaderImg
+projDeatilsWindowTabList = #tabstripPD > ul
+preProjDetailsSaveButton = #frmAddProjectsDetails > div.window-footer > div > a.k-button.k-button-icontext.k-primary.k-grid-UpdatePreProject.floated
+projDetailsSaveButton =	#frmAddProjectsDetails > div.window-footer > div > a.k-button.k-button-icontext.k-primary.k-grid-UpdateProject.floated
+projDetailsCancelButton =	#frmAddProjectsDetails > div.window-footer > div > a.k-button.k-button-icontext.k-grid-cancelProject
+
+						
+
+projBudjetHoursNavigation = #CustomerProjectsPrices > table > tbody > tr:nth-child(1) > td:nth-child(1) > p > a
+projBudjetPartnerHoursCell = #CustomerProjectsPrices > table > tbody > tr:nth-child(2) > td.hoursAmmount
+projBudjetPartnerHours = #Lng_HoursAmmount
+#-------
+projBudjetIncomingPred = #IncomingPred
+projBudjetNewRevenueButton = #CustomerProjectScheduledRevenues > div > a
+projBudjetNewRevenueTableBody = #CustomerProjectScheduledRevenues > table > tbody
+projBudjetApproveRevenueDelete = div[role ='dialog'] > div[role ='toolbar'] > button.k-button.k-primary
+projBudjetNewRevenueCell = #CustomerProjectScheduledRevenues > table > tbody > tr > td:nth-child(4)
+projBudjetNewRevenueField = #sng_Revenue
+projBudjetRevenueOutcome = #CustomerProjectScheduledRevenues > table > tfoot > tr > td:nth-child(4) > div.revenueOutcome
+#-------
+projBudjetQuartersTableBody = #CustomerProjectsQuarters > table > tbody
+projBudjetQuartersCell = #CustomerProjectsQuarters > table > tbody > tr:nth-child(1) > td:nth-child(4)
+projBudjetQuartersField = #Lng_Eval
+projBudjetQuartersSum = #CustomerProjectsQuarters > table > tfoot > tr > td:nth-child(4) > div
+#-------
+projBudjetRefPartnerAutoComplete = #RefPartnerAutoComplete
+projBudjetRefPartnerAutoCompleteResult = #RefPartnerAutoComplete_listbox
+projBudjetRefPartnerAutoCompleteResultEmpty = #RefPartnerAutoComplete-list > div.k-nodata > div
+#-------
+projBudjetConnectionProjInput = #CustomerProjectsPricesHolder > div:nth-child(3) > div > div:nth-child(1) > div:nth-child(2) > div > div > input
+projBudjetConnectionProjReasonText = #reasonForHoursChange
+#-------
+projBudjetMissionName = #TaskDesc
+projBudjetMissionTableBody = #ProjectTaskGrid > table > tbody
+#-------
+projBudjetTabMenu = #tabstripPPD > ul
+projBudjetErrorMessage = #errorMessageDesc > div
+projBudjetErrorMessageClose = body > div:nth-child(21) > div.k-window-titlebar.k-header > div > a
+
+
+newProjectsTableHead = #PreProjectsGrid > div.k-grid-header > div > table > thead
+newProjectsTableBody = #PreProjectsGrid > div.k-grid-content.k-auto-scrollable > table > tbody
+newProjectsTablePageNumbers = #PreProjectsGrid > div.k-pager-wrap.k-grid-pager.k-widget.k-floatwrap > ul
+newProjectsTableRowSize = #PreProjectsGrid > div.k-pager-wrap.k-grid-pager.k-widget.k-floatwrap > span.k-pager-info.k-label
+createNewProjectButton = #PreProjectsGrid > div.k-header.k-grid-toolbar.k-grid-top > a.k-button.k-button-icontext.k-grid-CreateProject
+aprroveProjectButton = #PreProjectsGrid > div.k-header.k-grid-toolbar.k-grid-top > a.k-button.k-button-icontext.k-grid-AllowProject
+
+newProjClientName = #SearchCustomerAutoComplete
+newProjClientNameAutoCompleteBox = #SearchCustomerAutoComplete_listbox
+newProjClientNameAutoCompleteEmptyResult = //*[@id="SearchCustomerAutoComplete-list"][last()]/div[3]/div
+newProjName = #SerchProjectNameAutoComplete
+newProjPartnerName = #UserNameAutoComplete
+newProjPartnerAutoCompleteBox = #UserNameAutoComplete_listbox
+newProjPartnerNameEmptyResult = //*[@id="UserNameAutoComplete-list"]/div[3]/div
+newProjOpenDate = #EntryDate
+newProjCloseDate = #EstCloseDate
+newProjSaveButton = #frmAddNewProjectsDetails > div.window-footer > div > a.k-button.k-button-icontext.k-primary.k-grid-AddProject.floated
+newProjCancelButton = #frmAddNewProjectsDetails > div.window-footer > div > a.k-button.k-button-icontext.k-grid-cancelProject
+
+
+processProjectsTableHead = #ProjectsInApprovalProcessGrid > div.k-grid-header > div > table > thead
+processProjectsTableBody = #ProjectsInApprovalProcessGrid > div.k-grid-content.k-auto-scrollable > table > tbody
+processProjectsTablePageNumbers = #ProjectsInApprovalProcessGrid > div.k-pager-wrap.k-grid-pager.k-widget.k-floatwrap.k-pager-sm > ul
+processProjectsTableRowSize = #ProjectsInApprovalProcessGrid > div.k-pager-wrap.k-grid-pager.k-widget.k-floatwrap.k-pager-sm > span.k-pager-info.k-label
+addHoursToPreTaskButton = #ProjectsInApprovalProcessGridDropList > li:nth-child(1) > a
+blockPreTaskButton = #ProjectsInApprovalProcessGridDropList > li:nth-child(2) > a
+approveAddHoursOperation = body > div.k-widget.k-window.k-dialog.k-rtl > div.k-dialog-buttongroup.k-dialog-button-layout-stretched > button.k-button.k-primary
+
+
+GeneralProjDeatilsTab = #tabstripPD > ul > li:nth-child(1)
+santinalDeatilsTab = #tabstripPD > ul > li:nth-child(2)
+ProjBudgetTab = #tabstripPD > ul > li:nth-child(3)
+
+LetterDateFiled = #Letter
+LockProjCheck = #StopHoursYes > label:nth-child(2)
+BlockProjReportBit = #divEnforceBudgetDecision > label
+CloseProjField = #CloseDate
+					
+
+activeProjectsTableHead = #ProjectsGrid > div.k-grid-header > div > table > thead
+activeProjectsTableBody = #ProjectsGrid > div.k-grid-content.k-auto-scrollable > table > tbody
+activeProjectsTablePageNumbers = #ProjectsGrid > div.k-pager-wrap.k-grid-pager.k-widget.k-floatwrap > ul
+
+copyProjectButton = #ProjectsGridDropList > li:nth-child(1)
+copyProjectNewName = #ProjectDescAutoComplete
+copyProjSantinalDeatilsTab = #tabstripPD > ul > li:nth-child(2)
+copyProjectSanAmountHours = #SANAmountHours
+copyProjectSanValueHours = #SANValueHours
+copyProjectSaveButton = #frmCopyProjectsDetails > div.window-footer > div > a.k-button.k-button-icontext.k-primary.k-grid-CopyProject.floated
+
+copyToPreProjButton = #ProjectsGridDropList > li:nth-child(2)
+pasteToPreProjButton = #PreProjectsGridDropList > li
+approvePasteToPreProjButton = body > div.k-widget.k-window.k-dialog.k-rtl > div.k-dialog-buttongroup.k-dialog-button-layout-stretched > button.k-button.k-primary
+
+askSubProjButton = #ProjectsGridDropList > li:nth-child(3)
+subProjNewName = #SubProjectNameAutoComplete 
+subProjPartnerName = #PartnerAutoComplete
+subProjPartnerNameAutoCom = #PartnerAutoComplete-list > div.k-list-scroller
+subProjPartnerNameEmpty = //*[@id="PartnerAutoComplete-list"]/div[3]/div
+subProjManagerName = #OrganizerAutoComplete
+subProjManagerNameAutoCom = #OrganizerAutoComplete-list
+subProjManagerNameEmpty = //*[@id="OrganizerAutoComplete-list"]/div[3]/div
+subProjHoursAmount = #SubSANAmountHours
+subProjHoursValue = #SubValueHours
+subProjFirstCheckBox = #QuestionOneYes > label:nth-child(2)
+subProjSecondCheckBox = #QuestionTwoYes > label:nth-child(2)
+subProjThirdCheckBox = #QuestionThreeYes > label:nth-child(2)
+subProjSendRequestButton = #frmRequestOpenSubProject > div.window-footer > div > a.k-button.k-button-icontext.k-primary.k-grid-RequestOpenSubProject.floated
+subProjCancelRequestButton = #frmRequestOpenSubProject > div.window-footer > div > a.k-button.k-button-icontext.k-grid-cancelProject
+subProjDeleteRequestButton = #RequestSubProjectsGrid > div.k-header.k-grid-toolbar.k-grid-top > a.k-button.k-button-icontext.k-grid-CancelRequestSubProject
+
+subProjectsTableHead = #RequestSubProjectsGrid > div.k-grid-header > div > table > thead
+subProjectsTableBody = #RequestSubProjectsGrid > div.k-grid-content.k-auto-scrollable > table > tbody
+subProjectsTablePageNumbers = #RequestSubProjectsGrid > div.k-pager-wrap.k-grid-pager.k-widget.k-floatwrap > ul
+subProjectsTableRowSize = #RequestSubProjectsGrid > div.k-pager-wrap.k-grid-pager.k-widget.k-floatwrap.k-pager-sm > span.k-pager-info.k-label
+subProjectsApproveButton = #RequestSubProjectsGrid > div.k-header.k-grid-toolbar.k-grid-top > a.k-button.k-button-icontext.k-grid-AllowRequestSubProject
+subProjectsPopUpButton = body > div:nth-child(22) > div.k-window-titlebar.k-header > div > a
+
+
+# ----- Tax invoice/receipt Page Locators  --------- 
+#---------------------------------------------------
+invoice/receiptGeneralSourceMakerButton = #MainWrapperTaxInvoiceReceipt > div > div > div > div.col-md-10.pull-left.btnTable > div > a.btn.btn-default.buttons-copy.buttons-html5.m-b-0.btn-success.btn-sm.ladda-button.pull-left
+invoice/receiptTableBody = #tblMainWrapperTaxInvoiceReceipt > tbody
+invoice/receiptTableResultNumber = #tblMainWrapperTaxInvoiceReceipt_info
+invoiceDetailsDescriptionTableBody = #tblTaxInvoiceBillingSearchResult > tbody
+invoiceDetailsAddRowToDescriptionTable = #tblTaxInvoiceBillingSearchResult_wrapper > div.row > div.col-xs-6 > div > a:nth-child(1)
+receiptDetailsDescriptionTableBody = #tblReceiptSearchResult > tbody
+receiptDetailsAddRowToDescriptionTable = #tblReceiptSearchResult_wrapper > div.row > div:nth-child(1) > div > a:nth-child(1)
+
+
+
+# ----- Accounts Page Locators  --------- 
+#-------------------------------------------
+BillingLoginUrl = http://somekhnetpre/KPMG/Account/Login?returnUrl=~%2FBilling
+BillingPortalUrl =http://somekhnetpre/KPMG/Billing
+BillingLoginUserName = #userID
+BillingLoginPassword = #userPassword
+BillingLoginSend = #submit-form
+BillingSignOutButton = #logoutForm > a
+BillingMainNavigationPanel = #tabsMain
+
+
+BillingFilterCustName = #custListHolder > div.col-md-9 > span
+BillingFilterManagerName = #mainPanel > div.col-md-12 > div > div > form > div > div:nth-child(3) > span > span.selection > span
+BillingFilterAccountNumber = #DocID
+BillingFilterProjName = #select2-slcProjects-container
+BillingFilterSanNum = #select2-slcSAN-container 
+BillingFilterAcoountStatus = #select2-slcStatus-container
+BillingFilterAcoountCreaterName = #select2-slcCreatedByEmp-container
+BillingFilterAcoountCreaterNameCancel = #select2-slcCreatedByEmp-container > span
+BillingFilterApproveStatus = #select2-slcApproveStatus-container
+BillingFilterDateFrom = #FromDate
+BillingFilterDateTo = #ToDate
+BillingFilterFooterDiv = #Main-form > div.panel-footer.clearfix
+
+BillingGeneralSourceMakerButton = .MakeOriginalBtn
+BillingAcoountsTableBody = #tblMainWrapper > tbody
+BillingAccountsTableResultNumber = #tblMainWrapper_info
+
+
+BillingAccDeatilsDate = #InvoiceHeader_CreateDate
+BillingAccDeatilsCoinRate = #select2-slcCurrencie-container
+BillingAccDeatilsCustName = #CustomerInfoForInvoice_CustomerName
+BillingAccDeatilsProjName = #select2-slcProjects-container
+BillingAccDeatilsProjNameClear = #select2-slcProjects-container > span
+BillingAccDeatilsAddHoursDescription = #tblBillingSearchResult_wrapper > div.row > div.col-xs-6 > div > a:nth-child(2)
+BillingAccDeatilsHoursDescriptionTableBody = #tblBillingSearchResult > tbody
+BillingAccDeatilsHoursTableTotalSum = #pageTotalBilling
+BillingAccDeatilsHoursTableTotalSumInShekel = #pageTotalBillingInNis
+BillingAccDeatilsExpensesDescriptionTableBody = #tblExpencesSearchResult > tbody
+BillingAccDeatilsExpensesTableTotalSum = #pageTotalExpences
+BillingAccDeatilsExpensesTableTotalSumInShekel = #pageTotalExpencesInNis
+BillingAccDeatilsAccountSumContainer = #tblSummaryWrapper > div > div:nth-child(5) > div:nth-child(2) > div > div
+BillingAccDeatilsMaam = #vatInputSpan > div
+BillingAccDeatilsMaamField = #vatDefault
+BillingAccDeatilsAddAdvence = #tblSummaryWrapper > div > div:nth-child(4) > div:nth-child(2) > div > div.col-xs-2.col-md-push-1 > button
+BillingAccDeatilsSumRoundOff = #convertToInt
+BillingAccDeatilsNewSaveButton = #saveInvoice-btn
+BillingAccDeatilsSaveButton = #editInvoice-btn
+BillingAccDeatilsPDFPrintButton = #showInvoice-btn
+
+BillingAdvenceTableBody = #tblAdvanceWrapper > tbody
+BillingAdvenceSaveButton = #advanceDeduction-btn
+BillingAdvenceCancelButton = #advanceDeduction-btn-close
+
+BillingMaamAlert = body > div.bootbox.modal.fade.in > div.modal-dialog > div > div.modal-footer.border-top.p-5 > button
+BillingMaamReqTextArea = #sendToTaxPartnerServiceGet
+BillingMaamSendReqButton = #sendToTaxPartner-btn-sendEmail
+
+BillingCustNameChangeReason = #txtReasons
+BillingCustNameSave = #saveReasonBtn
+BillingCustNameChangeClose = #reasonBtnClose
+
+
+BillingAddHoursButton = #tblBillingSearchResult_wrapper > div.row > div.col-xs-6 > div > a.btn.btn-default.btn-white.btn-sm.remove
+BillingAddHoursSearchButton = #bulkDaily-edit-form > div.panel-footer.clearfix > button
+BillingRemoveHoursCheck = #bulkDaily-edit-form > div.panel-footer.clearfix > div:nth-child(1) > div > label.col-sm-1.control-label.label-sm > div
+BillingAddHoursCheck = #bulkDaily-edit-form > div.panel-footer.clearfix > div:nth-child(2) > div > label.col-sm-1.control-label.label-sm > div
+BillingHoursUpdateTableBody = #tbl-bulkDaily-edit > tbody
+BillingHoursUpdateTableBodyRowSize =  #tbl-bulkDaily-edit_info
+BillingTableAddOrRemoveHoursButtonDiv = #tbl-bulkDaily-edit > tfoot > tr > th:nth-child(1) > span.tfoot-edit
+BillingApproveHoursOperation = body > div.bootbox.modal.fade.bootbox-confirm.in > div.modal-dialog > div > div.modal-footer > button.btn.btn-primary
+BillingCloseHoursWindow = #btn-close-bulkDaily-edit
+
+
+BillingAddExpensesButton = #tblExpencesSearchResult_wrapper > div.row > div:nth-child(1) > div > a.btn.btn-default.btn-white.btn-sm.remove
+BillingRemoveExpensesCheck = #expenses-edit-form > div.panel-footer.clearfix > div:nth-child(1) > div > label.col-sm-1.control-label.label-sm > div
+BillingAddExpensesCheck = #expenses-edit-form > div.panel-footer.clearfix > div:nth-child(2) > div > label.col-sm-1.control-label.label-sm > div
+BillingExpensesUpdateTableBody = #tbl-expensesInvoice-edit > tbody
+BillingExpensesUpdateTableBodyRowSize =  #tbl-expensesInvoice-edit_info
+BillingTableAddOrRemoveExpensesButtonDiv = #tbl-expensesInvoice-edit > tfoot > tr > th:nth-child(1) > span.tfoot-edit
+BillingApproveExpensesOperation = body > div.bootbox.modal.fade.bootbox-confirm.in > div.modal-dialog > div > div.modal-footer > button.btn.btn-primary
+BillingCloseExpensesWindow = #btn-close-expensesInvoice-edit
+BillingSearchExpensesButton = #expenses-edit-form > div.panel-footer.clearfix > button
+
+
+BillingAddHoursPackeges = #tblBillingSearchResult_wrapper > div.row > div.col-xs-6 > div > a:nth-child(1)
+BillingAddHoursPackegesBodyTable = #tbl-invoice-packages > tbody
+BillingAddHoursPackegesSaveButton = #btn-submit-pkg
+BillingAddHoursPackegesCloseButton = #btn-close-pkg
+
+
+BillingAddExpensesPackeges = #tblExpencesSearchResult_wrapper > div.row > div:nth-child(1) > div > a:nth-child(1)
+BillingAddExpensesPackegesBodyTable = #tbl-invoice-expenses > tbody
+BillingAddExpensesPackegesSaveButton = #btn-submit-pkg
+BillingAddExpensesPackegesCloseButton = #btn-close-pkg
+
+
+BillingPDFModelBody = #noteOfFee-modal-form > div.modal-dialog > div
+BillingPDFStatus = #SubTitle
+BillingPDFDate = #Dtm_DocDate
+BillingPDFCustName = #Txt_CustName
+BillingPDFRate = #Txt_rateDesc
+BillingPDFDescriptionDiv = #DataGridInvoice
+BillingPDFExpanceDiv = #divExpance
+BillingPDFDiscountDiv = #divDiscount
+BillingPDFMaamDiv = #divMaam
+BillingPDFAdvenceDiv = #divdbl_AdvanceDeduct
+BillingPDFTotalSumDiv = #divGroundTotal
+BillingPDFPaymentDemandButton = #btn-print-draft
+BillingPDFMakeSourceButton = #btn-print
+BillingPDFCloseButton = #btn-close
+
+BillingPDFSendMailButton = #btn-openSendEmail
+BillingPDFSendMailTo = #toEmail
+BillingPDFSendMailToButton = #btn-sendEmail
+BillingPDFMailCloseButton =#btn-sendEmail-close
+
+
+
+
+
+
